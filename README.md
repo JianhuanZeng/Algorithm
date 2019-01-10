@@ -2,6 +2,6 @@
 - DP
 - Graph
 
-## programming language: 
-(1).Python
+## Programming languages: 
+(1).Python<br/>
 (2).Matlab
