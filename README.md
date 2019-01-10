@@ -1,6 +1,7 @@
 # Algorithm
+- DP
+- Graph
 
-
-## programming language: Python
-
-## programming language: Matlab
+## programming language: 
+(1).Python
+(2).Matlab
