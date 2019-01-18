@@ -1,0 +1,22 @@
+## s-t connectivity: 001_ConnectedComponent.py 
+- DFS algorithm </br>
+- BFS algorithm </br>
+
+## shortest paths: 
+- Dijkstra's algorithm </br>
+- Bellman-Ford algorithm </br>
+- Floyd-Warshall algorithm </br>
+
+## Minimum spanning tree
+- Prim's algorithm </br>
+- Kruskal's algorithm </br>
+- more
+
+## Others
+- union find data structure</br>
+- hashing
+
+## Max flow
+- Fork-Fullkerson algorithm </br>
+
+## NP problem
