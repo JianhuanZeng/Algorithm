@@ -154,7 +154,7 @@ if __name__ == "__main__":
     main()    
 ################################################
 # Bellman-Ford algorithm
-## negative edges, DP algorithm(negative cycle)
+## negative edges, DP algorithm(no negative cycle)
 ## from a s to all v
 ## DP: OPT(i,v) = cost of a shortest s-v path with at most i edges
 ## DP: OPT(i,v) = min(OPT(i-1,v), min(OPT(i-1,x)+w(x,v)))
@@ -225,6 +225,14 @@ def bellman_ford(graph, s):
             distance[n] = min(distance[n], distance[v] + v.get_weight(n))
      return distance       
  
-  
+g = Graph()
+
+# from https://gist.github.com/joninvski/701720
+
 ################################################
 ## Floyd-Warshall algorithm </br>
+## negative edges, DP algorithm(negative cycle)
+## all s to all t: O(n*n*m) for run n time Bellman-Ford algorithm
+## O(n*n*n)
+
+# from https://github.com/cy94/floyd-warshall/blob/master/FloydWarshall.py
