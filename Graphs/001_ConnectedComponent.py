@@ -1,5 +1,5 @@
 ################################################
-# BFS: 
+# BFS: O(m+n)
 ## app: shortest path
 
 # https://codereview.stackexchange.com/questions/135156/bfs-implementation-in-python-3
@@ -50,7 +50,7 @@ def bfs_paths(G, s, t):
     except StopIteration:
       return None
 ################################################
-# DFS
+# DFS, O(m+n)
 def DFS(G, s):
   seen, stack = set(), [s]
   while stack:
@@ -69,9 +69,12 @@ def DFS(G,s,seen=[s]):
 ################################################
 # Connected Component 
 ## initailize all vertices as unvisited, recursively run DFS
-## app: study spread of disease  
-## app: particle detection
+## -app: study spread of disease  
+## -app: particle detection
 
+## Strrongly Connected Component 
+## - run G and G^r
+## - meta-graph: make super vertexes for SCC, O(m+n)
 ################################################
 # Graph Challenge
 # bipartitle
